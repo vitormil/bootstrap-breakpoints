@@ -1,0 +1,62 @@
+#bs-breakpoint-container {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #712cf9;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem;
+  z-index: 2147483647;
+  border-radius: 3px;
+}
+
+#bs-breakpoint-label {
+  font-size: 0px;
+}
+
+#bs-breakpoint-label::before {
+  color: #712cf9;
+  line-height: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#bs-width-label {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #777;
+}
+
+#bs-breakpoint-label::before {
+  content: "XS";
+}
+
+@media (min-width: 576px) {
+  #bs-breakpoint-label::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  #bs-breakpoint-label::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  #bs-breakpoint-label::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1200px) {
+  #bs-breakpoint-label::before {
+    content: "XL";
+  }
+}
+
+@media (min-width: 1400px) {
+  #bs-breakpoint-label::before {
+    content: "XXL";
+  }
+}

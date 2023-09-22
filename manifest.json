@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Bootstrap Breakpoints",
+  "description": "Extension that helps software developers to create responsive layouts with Bootstrap",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*","file://*/*"],
+      "css": ["bootstrap-breakpoints.css"]
+    },
+    {
+      "matches": ["*://*/*","file://*/*"],
+      "js": ["bootstrap-breakpoints.js"]
+    }
+  ],
+  "author": {
+    "email": "vitormil@gmail.com"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "180": "icon-180.png",
+    "192": "icon-192.png",
+    "512": "icon-512.png"
+  }
+}
